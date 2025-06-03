@@ -35,3 +35,16 @@ C:\Users\BT-YDMXB836\Downloads\KingPriceAssessment\KingPriceAssessment\KingPrice
 C:\Users\BT-YDMXB836\Downloads\KingPriceAssessment\KingPriceAssessment\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\refint\KingPriceAssessment.Data.dll
 C:\Users\BT-YDMXB836\Downloads\KingPriceAssessment\KingPriceAssessment\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.pdb
 C:\Users\BT-YDMXB836\Downloads\KingPriceAssessment\KingPriceAssessment\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\ref\KingPriceAssessment.Data.dll
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\bin\Debug\net9.0\KingPriceAssessment.Data.deps.json
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\bin\Debug\net9.0\KingPriceAssessment.Data.dll
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\bin\Debug\net9.0\KingPriceAssessment.Data.pdb
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.csproj.AssemblyReference.cache
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.AssemblyInfoInputs.cache
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.AssemblyInfo.cs
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.csproj.CoreCompileInputs.cache
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.sourcelink.json
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.dll
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\refint\KingPriceAssessment.Data.dll
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\KingPriceAssessment.Data.pdb
+C:\Dev\KingPriceAssessmentAPI\KingPriceAssessmentAPI\KingPriceAssessment.Data\obj\Debug\net9.0\ref\KingPriceAssessment.Data.dll

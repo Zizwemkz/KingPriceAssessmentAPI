@@ -7,7 +7,7 @@ namespace KingPriceAssessment.Common.Interfaces.Service
 {
     public interface IEmployeeAllocationService
     {
-        public Task<IEnumerable<EmployeeAllocation>> GetAllAllocationsAsync();
+        public Task<IEnumerable<EmployeeAllocationDto>> GetAllAllocationsAsync();
         Task<EmployeeAllocation> GetAllocationByIdAsync(int id);
         Task<ResponseMessage> AddAllocationAsync(AddEmployeeAllocationRequest allocation);
         Task<ResponseMessage> UpdateAllocationAsync(UpdateEmployeeAllocationRequest allocation);

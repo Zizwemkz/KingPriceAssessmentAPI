@@ -26,7 +26,7 @@ namespace KingPriceAssessment.Repositories
         {
             try
             {
-                return await _employeeDbContext.EmployeeAllocation
+                return (IEnumerable<EmployeeAllocation>)await _employeeDbContext.EmployeeAllocation
                     .Include(a => a.Employee)
                     .Include(a => a.Role)
                     .Include(a => a.Department)
