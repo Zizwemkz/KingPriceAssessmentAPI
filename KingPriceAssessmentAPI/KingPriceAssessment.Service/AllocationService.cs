@@ -20,9 +20,20 @@ namespace KingPriceAssessment.Service
             _allocationRepository = allocationRepository;
         }
 
-        public Task<IEnumerable<EmployeeAllocation>> GetAllAllocationsAsync()
-            => _allocationRepository.GetAllAsync();
-
+        public async Task<IEnumerable<EmployeeAllocationDto>> GetAllAllocationsAsync()
+        {
+            var allocations = await _allocationRepository.GetAllAsync();
+            return allocations.Select(a => new EmployeeAllocationDto
+            {
+                Id = a.Id,
+                EmployeeId = a.EmployeeId,
+                EmployeeName = a.Employee.Name,
+                RoleId = a.RoleId,
+                RoleName = a.Role.RoleName,
+                DepartmentId = a.DepartmentId,
+                DepartmentName = a.Department.DepartmentName,
+            }).ToList();
+        }
         public async Task<EmployeeAllocation> GetAllocationByIdAsync(int id)
         {
             if (id <= 0)

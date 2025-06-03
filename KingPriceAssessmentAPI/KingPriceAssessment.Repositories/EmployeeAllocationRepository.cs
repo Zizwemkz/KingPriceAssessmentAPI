@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Azure.Core;
 using KingPriceAssessment.Common.Interfaces.Repository;
 using KingPriceAssessment.Data;
 using KingPriceAssessment.Data.Models.Request.Add;
@@ -26,7 +27,7 @@ namespace KingPriceAssessment.Repositories
         {
             try
             {
-                return await _employeeDbContext.EmployeeAllocation
+                return (IEnumerable<EmployeeAllocation>)await _employeeDbContext.EmployeeAllocation
                     .Include(a => a.Employee)
                     .Include(a => a.Role)
                     .Include(a => a.Department)
@@ -100,13 +101,13 @@ namespace KingPriceAssessment.Repositories
 
             try
             {
-                var allocation = new EmployeeAllocation
-                {
-                    EmployeeId = allocationRequest.EmployeeId,
-                    RoleId = allocationRequest.RoleId,
-                    DepartmentId = allocationRequest.DepartmentId
-                };
-                _employeeDbContext.EmployeeAllocation.Update(allocation);
+                var allocation = await _employeeDbContext.EmployeeAllocation.FindAsync(allocationRequest.Id);
+                if (allocation == null)
+                    throw new Exception("Not found");
+
+                allocation.EmployeeId = allocationRequest.EmployeeId;
+                allocation.RoleId = allocationRequest.RoleId;
+                allocation.DepartmentId = allocationRequest.DepartmentId;
                 await _employeeDbContext.SaveChangesAsync();
             }
             catch (Exception ex)

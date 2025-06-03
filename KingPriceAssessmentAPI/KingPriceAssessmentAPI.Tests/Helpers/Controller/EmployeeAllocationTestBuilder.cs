@@ -2,6 +2,7 @@
 using KingPriceAssessment.Data.Tables;
 using KingPriceAssessment.Data.Models.Request.Add;
 using KingPriceAssessment.Data.Models.Request.Update;
+using KingPriceAssessment.Data.Models.Response;
 
 namespace KingPriceAssessmentAPI.Tests.Helpers.Controller
 {
@@ -11,6 +12,9 @@ namespace KingPriceAssessmentAPI.Tests.Helpers.Controller
         private int _employeeId;
         private int _departmentId;
         private int _roleId;
+        private string _employeeName;
+        private string _departmentName;
+        private string _roleName;
         private Faker _faker = new Faker();
 
         public EmployeeAllocationTestBuilder()
@@ -19,6 +23,9 @@ namespace KingPriceAssessmentAPI.Tests.Helpers.Controller
             _employeeId = _faker.Random.Int(1, 1000);
             _departmentId = _faker.Random.Int(1, 100);
             _roleId = _faker.Random.Int(1, 50);
+            _employeeName = _faker.Name.FullName();
+            _roleName = _faker.Name.JobTitle();
+            _departmentName = _faker.Commerce.Department();
         }
 
         public EmployeeAllocationTestBuilder WithId(int id)
@@ -45,14 +52,17 @@ namespace KingPriceAssessmentAPI.Tests.Helpers.Controller
             return this;
         }
 
-        public EmployeeAllocation BuildEmployeeAllocation()
+        public EmployeeAllocationDto BuildEmployeeAllocation()
         {
-            return new EmployeeAllocation
+            return new EmployeeAllocationDto
             {
                 Id = _id,
                 EmployeeId = _employeeId,
                 DepartmentId = _departmentId,
-                RoleId = _roleId
+                RoleId = _roleId,
+                EmployeeName = _employeeName,
+                DepartmentName = _departmentName,
+                RoleName = _roleName
             };
         }
 

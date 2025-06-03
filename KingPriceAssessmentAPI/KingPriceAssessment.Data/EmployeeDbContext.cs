@@ -16,9 +16,6 @@ namespace KingPriceAssessment.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<EmployeeAllocation> EmployeeAllocation { get; set; }
-
-        // The following configures EF to create a Sqlite database file in the
-        // special "local" folder for your platform.
        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
