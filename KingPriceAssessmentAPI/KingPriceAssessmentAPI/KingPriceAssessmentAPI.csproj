@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c066949b-6238-4776-8c78-e858016dedb6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Moq.EntityFrameworkCore" Version="9.0.0.5" />
+    <PackageReference Include="NUnit" Version="4.3.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KingPriceAssessment.Common\KingPriceAssessment.Common.csproj" />
+    <ProjectReference Include="..\KingPriceAssessment.Data\KingPriceAssessment.Data.csproj" />
+    <ProjectReference Include="..\KingPriceAssessment.Repositories\KingPriceAssessment.Repositories.csproj" />
+    <ProjectReference Include="..\KingPriceAssessment.Service\KingPriceAssessment.Service.csproj" />
+  </ItemGroup>
+
+</Project>

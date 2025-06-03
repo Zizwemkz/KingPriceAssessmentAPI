@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessmentAPI", "KingPriceAssessmentAPI.csproj", "{2B5D6904-24FC-42CA-B7BE-2CF189574865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessment.Common", "..\KingPriceAssessment.Common\KingPriceAssessment.Common.csproj", "{AD1E275B-BCA7-4DE8-A23C-88B7836AA423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessment.Data", "..\KingPriceAssessment.Data\KingPriceAssessment.Data.csproj", "{774B94FB-5CB4-4BBB-95F6-C546258E703C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessment.Service", "..\KingPriceAssessment.Service\KingPriceAssessment.Service.csproj", "{C6A16005-951D-4E25-BD49-3D06D210A279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessment.Repositories", "..\KingPriceAssessment.Repositories\KingPriceAssessment.Repositories.csproj", "{927E6FC8-912F-46E1-8A35-42F32B1AEFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingPriceAssessmentAPI.Tests", "..\KingPriceAssessmentAPI.Tests\KingPriceAssessmentAPI.Tests.csproj", "{398BE290-4A80-4C2C-965C-3D4CF6929B0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B5D6904-24FC-42CA-B7BE-2CF189574865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5D6904-24FC-42CA-B7BE-2CF189574865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5D6904-24FC-42CA-B7BE-2CF189574865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5D6904-24FC-42CA-B7BE-2CF189574865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1E275B-BCA7-4DE8-A23C-88B7836AA423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1E275B-BCA7-4DE8-A23C-88B7836AA423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1E275B-BCA7-4DE8-A23C-88B7836AA423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1E275B-BCA7-4DE8-A23C-88B7836AA423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774B94FB-5CB4-4BBB-95F6-C546258E703C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774B94FB-5CB4-4BBB-95F6-C546258E703C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774B94FB-5CB4-4BBB-95F6-C546258E703C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774B94FB-5CB4-4BBB-95F6-C546258E703C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A16005-951D-4E25-BD49-3D06D210A279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A16005-951D-4E25-BD49-3D06D210A279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A16005-951D-4E25-BD49-3D06D210A279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A16005-951D-4E25-BD49-3D06D210A279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927E6FC8-912F-46E1-8A35-42F32B1AEFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927E6FC8-912F-46E1-8A35-42F32B1AEFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927E6FC8-912F-46E1-8A35-42F32B1AEFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927E6FC8-912F-46E1-8A35-42F32B1AEFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398BE290-4A80-4C2C-965C-3D4CF6929B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398BE290-4A80-4C2C-965C-3D4CF6929B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398BE290-4A80-4C2C-965C-3D4CF6929B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398BE290-4A80-4C2C-965C-3D4CF6929B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C0D50FB-6CDC-4D5D-84DC-8052A5A926FD}
+	EndGlobalSection
+EndGlobal
